@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-03-06T01:17:57-0300",
+    date = "2024-03-06T15:33:03-0300",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
 )
 @Component
@@ -48,6 +48,7 @@ public class EmailResponseMapperImpl implements EmailResponseMapper {
         EmailResponseDTO.EmailResponseDTOBuilder emailResponseDTO = EmailResponseDTO.builder();
 
         emailResponseDTO.id( entity.getId() );
+        emailResponseDTO.customerId( entity.getCustomerId() );
         emailResponseDTO.emailFrom( entity.getEmailFrom() );
         emailResponseDTO.emailTo( entity.getEmailTo() );
         emailResponseDTO.subject( entity.getSubject() );
