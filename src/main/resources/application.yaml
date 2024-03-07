@@ -10,7 +10,7 @@ spring:
           auth: true
           starttls.enable: true
   datasource:
-    url: ${DB_URL:jdbc:h2:mem:emaildb}
+    url: ${DB_URL:jdbc:h2:mem:emaildb;DB_CLOSE_DELAY=-1}
     username: ${DB_USERNAME:sa}
     password: ${DB_PASSWORD:}
     driverClassName: org.h2.Driver
